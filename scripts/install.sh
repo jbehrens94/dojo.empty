@@ -38,5 +38,6 @@ find . -type d -name "$TEMPLATE*" -exec rename -i "s|$TEMPLATE|$NEW_NAME|g" {} +
 find . -type f -name "*.swift" -exec rename -i "s|$TEMPLATE|$NEW_NAME|g" {} +
 find . -type f -name "*.swift" -exec sed -i '' "s/$TEMPLATE/$NEW_NAME/g" {} +
 find . -type f -name "README.md" -exec sed -i '' "s/$TEMPLATE/$NEW_NAME/g" {} +
+find . -type f -name "sonar-project.properties" -exec sed -i '' "s/$TEMPLATE/$NEW_NAME/g" {} +
 
 echo "Project renamed from $TEMPLATE to $NEW_NAME"

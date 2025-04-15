@@ -1,0 +1,30 @@
+on:
+  push:
+    branches: [main]
+  schedule:
+    - cron: 0 0 * * *
+
+jobs:
+  lint:
+    runs-on: macos-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      
+      - name: SwiftLint
+        uses: cirruslabs/swiftlint-action@v1
+        with:
+          version: latest
+      
+      - name: Build
+        run: swift build
+      
+      - name: Test
+        run: swift test
+      
+      - name: SonarQube
+        uses: SonarSource/sonarqube-scan-action@v5.1.0
+        env:
+          SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
