@@ -1,0 +1,1 @@
+struct _projectName_ {}

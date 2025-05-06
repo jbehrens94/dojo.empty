@@ -3,7 +3,7 @@
 import PackageDescription
 
 let package = Package(
-    name: "projectName",
+    name: "_projectName_",
     platforms: [
         .macOS(.v15)
     ],
@@ -12,16 +12,16 @@ let package = Package(
     ],
     targets: [
         .executableTarget(
-            name: "projectName",
+            name: "_projectName_",
             plugins: [
                 .plugin(name: "SwiftLintBuildToolPlugin", package: "SwiftLintPlugins")
             ]
         ),
 
         .testTarget(
-            name: "projectNameTests",
+            name: "_projectName_Tests",
             dependencies: [
-                "projectName"
+                "_projectName_"
             ],
             plugins: [
                 .plugin(name: "SwiftLintBuildToolPlugin", package: "SwiftLintPlugins")

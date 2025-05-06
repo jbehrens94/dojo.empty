@@ -1,6 +1,6 @@
 import Testing
 
 @testable
-import projectName
+import _projectName_
 
 @Test func example() async throws {}

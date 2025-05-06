@@ -1,22 +1,22 @@
 {
     "configurations": [
         {
-            "type": "lldb",
+            "type": "swift",
             "request": "launch",
             "args": [],
             "cwd": "${workspaceFolder:Dojo.empty}",
-            "name": "Debug projectName",
-            "program": "${workspaceFolder:Dojo.empty}/.build/debug/projectName",
-            "preLaunchTask": "swift: Build Debug projectName"
+            "name": "Debug _projectName_",
+            "program": "${workspaceFolder:Dojo.empty}/.build/debug/_projectName_",
+            "preLaunchTask": "swift: Build Debug _projectName_"
         },
         {
-            "type": "lldb",
+            "type": "swift",
             "request": "launch",
             "args": [],
             "cwd": "${workspaceFolder:Dojo.empty}",
-            "name": "Release projectName",
-            "program": "${workspaceFolder:Dojo.empty}/.build/release/projectName",
-            "preLaunchTask": "swift: Build Release projectName"
+            "name": "Release _projectName_",
+            "program": "${workspaceFolder:Dojo.empty}/.build/release/_projectName_",
+            "preLaunchTask": "swift: Build Release _projectName_"
         }
     ]
 }

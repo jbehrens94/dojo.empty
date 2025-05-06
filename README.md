@@ -1,9 +1,9 @@
-# {{projectName}}
-This README describes the {{projectName}} package.
+# _projectName_
+This README describes the _projectName_ package.
 
 ## How to get started
 1. Clone this repository.
-2. Run `./scripts/install.sh {projectName}`. This will rename any folder, file or content to use your name of choosing.
+2. Run `./scripts/install.sh _projectName_`. This will rename any folder, file or content to use your name of choosing.
 3. Profit!
 
 ## Contributing
