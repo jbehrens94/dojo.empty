@@ -24,5 +24,7 @@ jobs:
         run: ./scripts/xccov-to-sonarqube-generic.sh ./build.xcresult > coverage.xml
       - name: Push to SonarQube
         run: sonar-scanner
+        with:
+          projectBaseDir: .
         env:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
